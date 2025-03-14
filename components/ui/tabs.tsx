@@ -1,7 +1,7 @@
 "use client";
 
-import * as React from "react";
 import * as TabsPrimitive from "@radix-ui/react-tabs";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -29,7 +29,7 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex items-center justify-center whitespace-nowrap rounded-catalyst-sm px-3 py-1.5 text-sm font-medium ring-offset-catalyst-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-catalyst-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:border data-[state=active]:border-catalyst-input data-[state=active]:bg-catalyst-muted data-[state=active]:text-catalyst-foreground data-[state=active]:shadow-sm",
+      "inline-flex items-center justify-center whitespace-nowrap rounded-catalyst-sm border border-transparent px-3 py-1.5 text-sm font-medium ring-offset-catalyst-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-catalyst-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:border-catalyst-input data-[state=active]:bg-catalyst-muted data-[state=active]:text-catalyst-foreground data-[state=active]:shadow-sm",
       className
     )}
     {...props}
@@ -52,4 +52,4 @@ const TabsContent = React.forwardRef<
 ));
 TabsContent.displayName = TabsPrimitive.Content.displayName;
 
-export { Tabs, TabsList, TabsTrigger, TabsContent };
+export { Tabs, TabsContent, TabsList, TabsTrigger };

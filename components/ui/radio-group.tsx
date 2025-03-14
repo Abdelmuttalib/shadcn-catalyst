@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from "react";
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
 import { Circle } from "lucide-react";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -28,7 +28,7 @@ const RadioGroupItem = React.forwardRef<
     <RadioGroupPrimitive.Item
       ref={ref}
       className={cn(
-        "aspect-square size-[1.1875rem] shrink-0 rounded-full border border-catalyst-input bg-catalyst-muted ring-offset-catalyst-background focus:outline-none focus-visible:ring-2 focus-visible:ring-catalyst-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-catalyst-primary data-[state=checked]:bg-primary data-[state=checked]:text-background data-[state=checked]:shadow-[inset_0_1px_oklch(var(--color-gray-500))] data-[state=checked]:dark:border-catalyst-input sm:size-[1.0625rem]",
+        "aspect-square size-[1.1875rem] shrink-0 rounded-full border border-catalyst-input bg-catalyst-muted ring-offset-catalyst-background focus:outline-none focus-visible:ring-2 focus-visible:ring-catalyst-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-catalyst-primary data-[state=checked]:bg-catalyst-primary data-[state=checked]:text-catalyst-background data-[state=checked]:shadow-[inset_0_1px_oklch(var(--color-gray-500))] data-[state=checked]:dark:border-catalyst-input sm:size-[1.0625rem]",
         className
       )}
       {...props}

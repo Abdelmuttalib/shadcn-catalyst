@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from "react";
 import * as TogglePrimitive from "@radix-ui/react-toggle";
 import { cva, type VariantProps } from "class-variance-authority";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -13,12 +13,12 @@ const toggleVariants = cva(
       variant: {
         default: "bg-transparent",
         outline:
-          "border border-input bg-transparent hover:bg-catalyst-accent hover:text-catalyst-accent-foreground",
+          "border border-catalyst-input bg-transparent hover:bg-catalyst-accent hover:text-catalyst-accent-foreground",
       },
       size: {
-        default: "h-10 px-3 min-w-10",
-        sm: "h-9 px-2.5 min-w-9",
-        lg: "h-11 px-5 min-w-11",
+        default: "h-9 px-2.5 min-w-9",
+        sm: "h-8 px-2 min-w-8",
+        lg: "h-10 px-5 min-w-10",
       },
     },
     defaultVariants: {

@@ -1,9 +1,9 @@
-import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
+import Link, { LinkProps } from "next/link";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
-import Link, { LinkProps } from "next/link";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-catalyst-md text-sm font-semibold ring-offset-catalyst-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-catalyst-ring focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
@@ -11,11 +11,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-catalyst-primary text-catalyst-primary-foreground hover:bg-catalyst-primary/90 shadow-[inset_0_2px_oklch(var(--color-gray-600))] dark:shadow-[inset_0_1px_oklch(var(--color-gray-500))] border border-catalyst-primary/60",
+          "bg-catalyst-primary text-catalyst-primary-foreground hover:bg-catalyst-primary/90 shadow-[inset_0_2px_oklch(var(--catalyst-color-gray-600))] dark:shadow-[inset_0_1px_oklch(var(--catalyst-color-gray-500))] border border-catalyst-primary/60",
         destructive:
           "bg-catalyst-destructive text-catalyst-destructive-foreground hover:bg-catalyst-destructive/90",
         outline:
-          "border border-input hover:bg-catalyst-muted hover:text-catalyst-accent-foreground shadow-sm",
+          "border border-catalyst-input hover:bg-catalyst-muted hover:text-catalyst-accent-foreground shadow-sm",
         secondary:
           "bg-catalyst-muted text-secondary-foreground hover:bg-catalyst-secondary/80",
         ghost: "hover:bg-catalyst-accent hover:text-catalyst-accent-foreground",

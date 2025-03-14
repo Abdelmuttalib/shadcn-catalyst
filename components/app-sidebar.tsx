@@ -27,6 +27,9 @@ import {
   SquareTerminal,
 } from "lucide-react";
 import { TeamSwitcher } from "./team-switcher";
+import { NavMain } from "./nav-main";
+import { NavProjects } from "./nav-projects";
+import { NavUser } from "./nav-user";
 
 // Menu items.
 const items = [
@@ -194,13 +197,18 @@ export function AppSidebar() {
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
+        {/* <NavMain items={data.navMain} />
+        <NavProjects projects={data.projects} /> */}
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton
+                    asChild
+                    data-active={item.title === "Home"}
+                  >
                     <a href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
@@ -213,7 +221,10 @@ export function AppSidebar() {
         </SidebarGroup>
         <SidebarGroup />
       </SidebarContent>
-      <SidebarFooter />
+      <SidebarFooter>
+        <NavUser user={data.user} />
+      </SidebarFooter>
+      {/* <SidebarFooter /> */}
     </Sidebar>
   );
 }

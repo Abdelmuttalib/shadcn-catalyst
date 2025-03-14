@@ -69,11 +69,11 @@
 
     --radius: 0.6rem;
 
-    --sidebar-background: var(--background);
+    --sidebar-background: var(--color-gray-50);
     --sidebar-foreground: var(--color-gray-800);
     --sidebar-primary: var(--primary);
     --sidebar-primary-foreground: var(--primary-foreground);
-    --sidebar-accent: var(--accent);
+    --sidebar-accent: var(--color-gray-200);
     --sidebar-accent-foreground: var(--accent-foreground);
     --sidebar-border: var(--border);
     --sidebar-ring: var(--ring);

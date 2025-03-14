@@ -35,7 +35,7 @@ export default function RootLayout({
             <ThemeButton />
           </div>
           <Toaster />
-          <TailwindIndicator />
+          {/* <TailwindIndicator /> */}
           {children}
         </body>
       </ThemeProvider>
